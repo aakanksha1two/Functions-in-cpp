@@ -5,9 +5,9 @@ int analyzeDigits(int num,int& outSum);
 
 int main(){
 int n,countDigs,sumDigs;
-cout<<"Enter the number : "<<endl
-cin<<n;
-countDigs=analyzeDigits(n,sumDigs)
+cout<<"Enter the number : "<<endl;
+cin>>n;
+countDigs=analyzeDigits(n,sumDigs);
 cout<<n<< " contains "<<countDigs<<" digits"<<endl;
 cout<<"Sum of the digits in " <<n<<" : "<<sumDigs<<endl;
 
