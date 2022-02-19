@@ -1,8 +1,7 @@
 #include<iostream>
-using namespace std;
-int 
+using namespace std; 
 int factorial(int num);
-int kcombination(int n,int k );
+int k_combination(int n,int k );
 
 int main ()
 {
