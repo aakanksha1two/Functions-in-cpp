@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int sumOfDigits(int num);
+int count(int num);
+
+int main(){
+int n;
+cout<<"Enter the number : "<<endl
+cin<<n;
+
+cout<<n<< " contains "<<count(n)<<" digits"<<endl;
+cout<<"Sum of the digits in " <<n<<" : "<<sumOfDigits(n)<<endl;
+
+return 0;
+}
+int sumOfDigits(int num){
+int sum,d;sum=0;
+while(num!=0){
+d=n%10;
+sum=sum+d;
+num=num/10;
+}
+return sum;
+}
+
+int count(int num){
+while(num!=0)
+{
+int c,d;c=0;
+d=n%10;
+if(num>=0)
+c++;
+num/=10;
+return c;
+}
+}
+
+
