@@ -1,39 +1,34 @@
 #include<iostream>
 using namespace std;
 
-int sumOfDigits(int num);
-int count(int num);
+int analyzeDigits(int num,int& outSum);
 
 int main(){
-int n;
+int n,countDigs,sumDigs;
 cout<<"Enter the number : "<<endl
 cin<<n;
-
-cout<<n<< " contains "<<count(n)<<" digits"<<endl;
-cout<<"Sum of the digits in " <<n<<" : "<<sumOfDigits(n)<<endl;
+countDigs=analyzeDigits(n,sumDigs)
+cout<<n<< " contains "<<countDigs<<" digits"<<endl;
+cout<<"Sum of the digits in " <<n<<" : "<<sumDigs<<endl;
 
 return 0;
 }
-int sumOfDigits(int num){
-int sum,d;sum=0;
+
+int analyzeDigits(int num,int& outSum)
+{
+int count,sum;count=sum=0;
+int currDig;
+ 
 while(num!=0){
-d=n%10;
-sum=sum+d;
+currDig=num%10;
+count++;
+sum=sum+currDig;
 num=num/10;
 }
-return sum;
+outSum=sum;
+return count;
 }
 
-int count(int num){
-while(num!=0)
-{
-int c,d;c=0;
-d=n%10;
-if(num>=0)
-c++;
-num/=10;
-return c;
-}
-}
+
 
 
