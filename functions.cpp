@@ -11,19 +11,19 @@ cout<<"Please enter n,k (k<=n)"<<endl;
 cin>>n>>k;
 cout<<n<<"choose"<<k<<"="<<k_combination(n,k)<<endl;
 return 0;
-
 }
+
+
 int k_combination(int n,int k)
 {
   int nFact,kFact,k_nFact,i,k_comb;
   nFact=factorial(n);
-kFact=factorial(k);
-k_nFact=factorial(n-k);
+  kFact=factorial(k);
+  k_nFact=factorial(n-k);
   k_comb=int(nFact/(kFact*k_nFact));
   return k_comb;
 }
 
-k_comb=int(nFact/(kFact*k_nFact));
 int factorial(int num)
 {
 int f=1;
